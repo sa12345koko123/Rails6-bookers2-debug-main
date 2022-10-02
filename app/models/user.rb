@@ -17,7 +17,6 @@ class User < ApplicationRecord
   has_many :followers, through: :reverse_of_relationships, source: :follower
 
 
-
   validates :name, length: { minimum: 2, maximum: 20 }, uniqueness: true
   validates :introduction, length: { maximum: 50 }
 
@@ -36,6 +35,6 @@ class User < ApplicationRecord
   def following?(user)
     followings.include?(user)
   end
-
+  
 
 end

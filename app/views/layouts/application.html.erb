@@ -13,7 +13,7 @@
 
     <div class="search-box">
       <% if user_signed_in? %>
-        <%= render 'searches/search', model: @model, content: @content, method: @method %>
+        <%= render 'searches/search' %>
       <% end %>
     </div>
 

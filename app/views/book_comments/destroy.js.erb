@@ -1,1 +1,2 @@
-$('#comment_area').html("<%= escape_javascript(render 'book_comments/comment_index', book: @book) %>");
+$('.book-comments-counter').html("<%= j(render 'book_comments/counter', book: @comment.book) %>")
+$('.book-comments-index').html("<%= j(render 'book_comments/index', book: @comment.book) %>")
